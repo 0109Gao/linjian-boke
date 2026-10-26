@@ -1,0 +1,42 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: linjian-blog
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/${DB_NAME:linjian_blog}?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:123456789}
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Shanghai
+  servlet:
+    multipart:
+      max-file-size: 2MB
+      max-request-size: 2MB
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    # log-impl: org.apache.ibatis.logging.stdout.StdOutImpl  # 开发调试时可打开
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+# JWT 配置
+jwt:
+  # 密钥（生产环境务必通过环境变量 JWT_SECRET 注入强随机值）
+  secret: ${JWT_SECRET:linjian-blog-jwt-secret-key-change-me-in-production-0123456789}
+  # 过期时间（毫秒），默认 7 天
+  expiration: 604800000
+
+# 站点默认管理员（注册时判断）
+blog:
+  admin-email: admin@linjian.com
+  # 上传文件目录（头像等），相对于后端运行目录
+  upload-dir: uploads
