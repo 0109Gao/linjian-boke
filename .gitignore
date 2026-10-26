@@ -1,0 +1,34 @@
+# ===== 依赖目录 =====
+node_modules/
+.pnpm-store/
+
+# ===== 后端构建产物 =====
+backend/target/
+backend/release/
+*.jar
+*.class
+*.war
+*.ear
+
+# ===== 前端构建产物 =====
+dist/
+frontend/dist/
+admin/dist/
+
+# ===== 上传/临时文件 =====
+backend/uploads/
+uploads/
+*.log
+*.tmp
+
+# ===== IDE 与系统文件 =====
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# ===== 环境与密钥（勿上传） =====
+.env
+.env.local
+application-local.yml

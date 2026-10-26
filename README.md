@@ -1,4 +1,4 @@
-# 林间博客 · 最终版
+# 林间博客
 
 > 林间博客的完整交付版本：Vue 3 + Spring Boot 3 + MySQL 的前后端分离个人博客系统，附带独立管理后台。
 
@@ -45,12 +45,12 @@
 
 ## 三、技术栈
 
-| 层 | 技术 |
-|---|---|
-| 后端 | Spring Boot 3.2.5、Spring Security、JWT、MyBatis-Plus 3.5.6、MySQL 8 |
-| 前台 | Vue 3.4、Vite 5、Vue Router、Pinia、Element Plus、Axios、marked |
-| 后台 | Vue 3.4、Vite 5、Vue Router、Pinia、Element Plus、Axios |
-| 数据库 | MySQL（库名 `linjian_blog`） |
+| 层   | 技术                                                               |
+| --- | ---------------------------------------------------------------- |
+| 后端  | Spring Boot 3.2.5、Spring Security、JWT、MyBatis-Plus 3.5.6、MySQL 8 |
+| 前台  | Vue 3.4、Vite 5、Vue Router、Pinia、Element Plus、Axios、marked        |
+| 后台  | Vue 3.4、Vite 5、Vue Router、Pinia、Element Plus、Axios               |
+| 数据库 | MySQL（库名 `linjian_blog`）                                         |
 
 ---
 
@@ -105,10 +105,10 @@ npm run dev
 
 ## 五、测试账号
 
-| 角色 | 账号 | 密码 |
-|---|---|---|
-| 站长（管理员） | GZP | 123456 |
-| 会员 | gzp123 | 123456 |
+| 角色      | 账号     | 密码     |
+| ------- | ------ | ------ |
+| 站长（管理员） | GZP    | 123456 |
+| 会员      | gzp123 | 123456 |
 
 站长可登录管理后台（5176 端口），会员访问管理接口会被拒绝（403 无权限），体现权限隔离。
 
@@ -126,11 +126,11 @@ npm run dev
 
 ## 七、端口规划
 
-| 服务 | 端口 |
-|---|---|
+| 服务     | 端口   |
+| ------ | ---- |
 | 后端 API | 8080 |
-| 博客前台 | 5173 |
-| 管理后台 | 5176 |
+| 博客前台   | 5173 |
+| 管理后台   | 5176 |
 
 ---
 
