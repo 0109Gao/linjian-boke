@@ -2,18 +2,11 @@
 node_modules/
 .pnpm-store/
 
-# ===== 后端构建产物 =====
+# ===== 后端构建中间产物（只排除中间文件，保留 release 里的 jar 成品）=====
 backend/target/
-backend/release/
-*.jar
 *.class
 *.war
 *.ear
-
-# ===== 前端构建产物 =====
-dist/
-frontend/dist/
-admin/dist/
 
 # ===== 上传/临时文件 =====
 backend/uploads/
